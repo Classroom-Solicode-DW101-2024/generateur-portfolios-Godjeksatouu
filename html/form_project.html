@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Projects</title>
+    <!--link css-->
+    <link rel="stylesheet" href="/css/form_project.css" />
+    <!--link font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="formule">
+      <img src="/img/solicode.png" />
+      <form id="projectForm" onsubmit="addProject(); return false;">
+        <div class="user-box">
+          <label for="title">Project Title:</label><br />
+          <input type="text" id="title" name="title" /><br />
+          <p id="titleError" class="error-message"></p>
+        </div>
+        <div class="user-box">
+          <label for="github">GitHub Link:</label><br />
+          <input type="url" id="github" name="github" /><br />
+          <p id="githubError" class="error-message"></p>
+        </div>
+        <div class="user-box-checkbox">
+          <label id="check">Skills:</label><br />
+          <input type="checkbox" id="htmlSkill" name="skills" value="HTML" />
+          HTML
+          <input type="checkbox" id="cssSkill" name="skills" value="CSS" /> CSS
+          <input
+            type="checkbox"
+            id="jsSkill"
+            name="skills"
+            value="JavaScript"
+          />
+          JavaScript<br />
+        </div>
+        <div class="user-box">
+          <label for="date">Project Date:</label><br />
+          <input type="date" id="date" name="date" /><br />
+          <p id="dateError" class="error-message"></p>
+        </div>
+        <button type="submit"><i class="fa-solid fa-check"></i>Validé</button>
+        <button type="button" onclick="finishPortfolio()">
+          <i class="fa-solid fa-share"></i>Terminer
+        </button>
+      </form>
+    </div>
+
+    <div id="newprojectform"></div>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

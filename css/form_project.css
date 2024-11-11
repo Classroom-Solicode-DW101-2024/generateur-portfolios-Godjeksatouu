@@ -1,0 +1,131 @@
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #2980b9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.valid {
+  border: 2px solid green;
+}
+
+.invalid {
+  border: 2px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+}
+
+.formule {
+  width: 400px;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.user-box input,
+.user-box select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid #333;
+  background: transparent;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.user-box-checkbox {
+  margin: 20px 0px;
+}
+
+.user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #666;
+  pointer-events: none;
+  transition: 0.4s ease;
+}
+
+#newprojectform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.project-card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 400px;
+  margin: 0px 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  font-size: 18px;
+  color: #2980b9;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.project-card a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #1f5a8a;
+  color: white;
+  border: #1f5a8a;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}

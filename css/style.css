@@ -1,0 +1,86 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #2980b9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.valid {
+  border: 2px solid green;
+}
+.invalid {
+  border: 2px solid red;
+}
+.error-message {
+  color: red;
+  font-size: 0.9em;
+}
+.formule {
+  width: 400px;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.formule h2 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.user-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.user-box input,
+.user-box select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid #333;
+  background: transparent;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #666;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.user-box input:focus ~ label,
+.user-box input:not(:placeholder-shown) ~ label,
+.user-box select:focus ~ label,
+.user-box select:not(:placeholder-shown) ~ label {
+  top: -20px;
+  font-size: 12px;
+  color: #2980b9;
+}
+button {
+  background-color: #1f5a8a;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #0d2539;
+  border: #1f5a8a;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
